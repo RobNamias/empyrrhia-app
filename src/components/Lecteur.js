@@ -5,8 +5,6 @@ import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import musicTracks from "../utilities/loadPlaylist.js";
 
-//import Compo11 from "../assets/audio/Compo11.mp3";
-
 export default function Lecteur() {
 
     // États du lecteur
@@ -54,7 +52,7 @@ export default function Lecteur() {
                 {/* Bouton pour afficher/masquer le lecteur */}
                 <div id="cacherlecteur">
                     <button id="boutoncacher" onClick={toggleLecteur}>
-                        <img src='../logolecteur.png' alt="Masquer"></img>
+                        <img src='..\logolecteur.png' alt="Masquer"></img>
                     </button>
                 </div>
             </div>

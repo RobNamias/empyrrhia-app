@@ -21,9 +21,9 @@ const Home = () => {
                         </p>
                     </div>
                 </div>
-                <div className="video">
+                {/* <div className="video">
                     <iframe width="100%" height="625" src="https://www.youtube.com/embed/4cH9h8_xQ7Y?list=PLOH2a8j41CSA4bVi6dLUm7DCs1Z8Kk4Ut" title="dB Ill - Krakapov" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                </div> */}
                 <div className="next3show">
                     <h1> PROCHAINES DATES : </h1>
                     <ul>
