@@ -1,0 +1,93 @@
+.pageHome {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.presentation {
+    width: 100%;
+    // background-color: antiquewhite;
+    display: inline-block;
+    margin: 60px 0 60px 0;
+}
+
+.photopresentation {
+    border-radius: 3px;
+    float: left;
+    height: 300px;
+    width: 49%;
+    background-image: url('../../assets/img/teleboobies.jpg');
+    background-size: contain;
+    // background-color: aqua;
+}
+
+.textpresentation {
+    float: right;
+    // background-color: grey;
+    width: 48%;
+    height: 300px;
+}
+
+.textpresentation p {
+    text-align: justify;
+    // background-color: white;
+    margin: 30px 5px 0 5px;
+}
+
+.textpresentation p::first-letter {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.video {
+    margin: auto;
+}
+
+.next3show {
+    // background-color: rgb(34, 34, 34);
+    border-radius: 3px;
+
+    h1 {
+        padding-top: 20px;
+        text-align: left;
+        margin-left: 30px;
+        // text-decoration: underlin;
+    }
+
+    ul {
+        //background-color: white;
+        padding: 10px 0;
+    }
+
+    li {
+        border-radius: 5px;
+        margin: 5px 0 10px 0;
+        padding: 5px 5px 0 5px;
+        font-size: 20px;
+        backdrop-filter: invert(10%);
+
+    }
+}
+
+@media (min-width: 300px) and (max-width: 995px) {
+    .presentation {
+        width: 100%;
+        //background-color: antiquewhite;
+        display: inline-block;
+        margin: 30px auto;
+    }
+
+    .photopresentation {
+        float: none;
+        text-align: center;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .textpresentation {
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+}

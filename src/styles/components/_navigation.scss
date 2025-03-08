@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "font-2";
+  src: url(../../assets/fonts/BlackDahlia.ttf) format("truetype");
+}
+
+$font-2: "font-2", sans-serif;
+
+.navigation {
+
+  height: 280px;
+  background-image: url('../../assets/img/empyrrhia typo flo.png');
+  //background-size:contain;
+  width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  //background-size: cover;
+  position: relative;
+  overflow: hidden;
+  min-width: min-content;
+
+
+  ul {
+    //font-family: $font-2;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    //opacity: 80%;
+    text-align: center;
+    vertical-align: middle;
+
+    a {
+      backdrop-filter: blur(2px) invert(100%);
+      text-decoration: none;
+      padding: 20px 30px 10px 30px;
+      white-space: nowrap;
+      font-size: 36px;
+      width: 249px;
+      text-shadow: 1px 1px 1px rgb(255, 255, 255),
+        -2px 2px 1px white;
+      z-index: 0;
+      transition: opacity 1s ease-in-out;
+      -moz-transition: opacity 1s ease-in-out;
+      -webkit-transition: opacity 1s ease-in-out;
+
+      &:hover {
+
+        background-image: radial-gradient(rgba(255, 255, 255, 0.712), rgba(255, 255, 255, 0.171), rgba(255, 255, 255, 0));
+        opacity: 100%;
+        transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 1s ease-in-out;
+      }
+
+
+      li {
+        overflow: hidden;
+        color: $color-1;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+    }
+
+    .nav-active {
+      position: relative;
+      opacity: 100%;
+
+      &::after {
+        content: "";
+        height: 50%;
+        width: 0;
+        backdrop-filter: blur(2px) invert(100%);
+        position: absolute;
+        bottom: 0px;
+        left: 49.9%;
+        transform: translateX(-50%);
+        -webkit-animation: anim 0.3s ease forwards;
+        animation: anim 0.6s ease forwards;
+
+        @-webkit-keyframes anim {
+          to {
+            width: 100%;
+          }
+        }
+
+        @keyframes anim {
+          to {
+            width: 100%;
+          }
+        }
+      }
+
+      &::after:hover {
+        background-color: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 995px) {
+  .navigation {
+    height: 120px;
+    width: 100%;
+    background-size: cover;
+
+    ul {
+      position: left;
+      display: inline-flex;
+      flex: content;
+
+
+      a {
+        font-size: 14px;
+        padding: 15px 2% 13px 2%;
+        width: 95px;
+      }
+    }
+  }
+}
+
+@media (min-width: 750px) and (max-width:995px) {
+
+  a {
+    width: 110px;
+  }
+}

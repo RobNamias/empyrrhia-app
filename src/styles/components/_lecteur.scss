@@ -1,0 +1,385 @@
+$rhap_theme-color: #000000 !default;
+//$rhap_background-color: $color-4 !default;
+$rhap_background-color: rgba(255, 255, 255, 0) !default;
+$rhap_bar-color: #000000 !default;
+$rhap_time-color: #000000 !default;
+$rhap_font-family: inherit !default;
+
+.conteneurlecteur {
+
+    backdrop-filter: invert(30%); // background-color: rgba(71, 71, 71, 0.171);
+    position: fixed;
+    right: 0;
+    margin-top: 280px;
+    margin-right: 2px;
+    width: 250px;
+    border-radius: 5px;
+    vertical-align: middle;
+    z-index: 10;
+    opacity: 20%;
+    // transition: opacity 5s ease-in-out;
+    // -moz-transition: opacity 5s ease-in-out;
+    // -webkit-transition: opacity 5s ease-in-out;
+    transition: all 7s ease-in-out;
+    -moz-transition: all 7s ease-in-out;
+    -webkit-transition: all 7s ease-in-out;
+    ;
+
+    &:hover {
+        backdrop-filter: blur(2px) invert(30%);
+        opacity: 100%;
+        transition: all 2s ease-in-out;
+        -moz-transition: all 2s ease-in-out;
+        -webkit-transition: all 2s ease-in-out;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 995px) {
+    .conteneurlecteur {
+        margin-top: 125px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 750px) {
+    .conteneurlecteur {
+        margin-top: 125px;
+        width: 100%;
+        opacity: 100%;
+    }
+
+    .conteneurHeader {
+        width: 100%;
+        float: right;
+    }
+
+    .HeaderLecteur {
+        width: 100%;
+    }
+
+    .scroll-left {
+        width: 100%;
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .playlistLecteur {
+        width: 100%;
+    }
+}
+
+.conteneurHeader {
+    // backdrop-filter: blur(5px);
+    display: inline-flex;
+    width: 250px;
+    border-radius: 0;
+    margin: 0;
+    height: 30px;
+    opacity: 100%;
+}
+
+.HeaderLecteur {
+    width: 250px;
+    margin: 0;
+}
+
+
+
+#boutoncacher {
+    width: 50px;
+    height: 30px;
+    //background-color: $rhap_background-color;
+    border: 0;
+    //border-radius: 15px;
+    // float: center;
+    margin: 0;
+}
+
+#boutoncacher:hover {
+    cursor: pointer;
+}
+
+#boutoncacher img {
+    width: 23px;
+    height: 23px;
+    position: center, center;
+    padding: 0;
+    margin-top: 2.5px;
+}
+
+//Scrollbar
+.scroll-left {
+    margin-left: 5px;
+    overflow: hidden;
+    // background-color: white;
+    color: white;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 100;
+    padding: 0 5px;
+    width: 185px
+}
+
+.scroll-left p {
+    height: 100%;
+    font-size: 22px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: visible;
+
+
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: scroll-left 15s linear infinite;
+    -webkit-animation: scroll-left 15s linear infinite;
+    animation: scroll-left 20s linear infinite;
+}
+
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+//Lecteur
+
+
+
+.rhap_container {
+    // background-color: $color-4;
+    background-color: rgba(255, 255, 255, 0);
+
+    &:focus:not(:focus-visible) {
+        outline: 0;
+    }
+}
+
+.rhap_progress-section {
+    display: flex;
+    flex: 3 1 auto;
+    align-items: center;
+    width: 100%
+}
+
+.rhap_progress-container {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    flex: 1 0 auto;
+    align-self: center;
+    margin: 0 calc(10px + 1%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+
+    &:focus:not(:focus-visible) {
+        outline: 0;
+    }
+}
+
+.rhap_time {
+    color: $rhap_time-color;
+    font-size: 12px;
+    user-select: none;
+    width: 38px;
+    margin-top: 4px;
+    -webkit-user-select: none;
+}
+
+.rhap_time.rhap_total-time {
+    //background-color: antiquewhite;
+    padding-left: 5px;
+}
+
+.rhap_progress-bar {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    height: 5px;
+    background-color: $rhap_bar-color;
+    border-radius: 2px;
+}
+
+.rhap_progress-filled {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: $rhap_theme-color;
+    border-radius: 2px;
+}
+
+.rhap_progress-bar-show-download {
+    background-color: rgba($rhap_bar-color, 0.5);
+}
+
+.rhap_download-progress {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: $rhap_bar-color;
+    border-radius: 2px;
+}
+
+.rhap_progress-indicator {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+    width: 8px;
+    height: 15px;
+    margin-left: -3px;
+    top: -5px;
+    background: $rhap_theme-color;
+    border-radius: 50px;
+    box-shadow: rgba($rhap_theme-color, .5) 0 0 5px;
+}
+
+
+.rhap_progress-bar {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 0;
+    width: 120px;
+    height: 5px;
+    background-color: $rhap_bar-color;
+    border-radius: 2px;
+}
+
+.rhap_progress-filled {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: $rhap_theme-color;
+    border-radius: 2px;
+}
+
+.rhap_main-controls-button {
+    margin: 0 3px;
+    color: $rhap_theme-color;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+}
+
+.rhap_additional-controls {
+    //background-color: antiquewhite;
+    width: 0px;
+}
+
+.rhap_volume-button {
+    flex: 0 0 26px;
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+    color: $rhap_theme-color;
+    margin-right: 6px;
+}
+
+.rhap_volume-bar {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: $rhap_bar-color;
+    border-radius: 2px;
+}
+
+
+.rhap_volume-filled {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: $rhap_theme-color;
+    border-radius: 2px;
+}
+
+.rhap_volume-indicator {
+    width: 5px;
+    height: 12px;
+    background-color: #000000;
+    top: -4px;
+    margin-left: -2px;
+}
+
+.rhap_repeat-button {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+    color: $rhap_theme-color;
+    margin-right: 6px;
+}
+
+//Playlist
+
+.playlistLecteur {
+    // background-color: $color-4;
+    position: relative;
+}
+
+.listePlaylist li {
+    padding-left: 5px;
+
+    &:hover {
+        background-color: rgb(121, 121, 121);
+    }
+}
+
+.listePlaylist button {
+    border: none;
+    height: 21.5px;
+    background-color: inherit;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+
+    &:hover {
+        cursor: pointer;
+        margin-left: 3px;
+        // transition: opacity .25s ease-in-out;
+        // -moz-transition: opacity .25s ease-in-out;
+        // -webkit-transition: opacity .25s ease-in-out;
+    }
+
+    &:active {
+        font-weight: bold;
+    }
+}

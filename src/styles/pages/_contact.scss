@@ -1,0 +1,147 @@
+.formContact {
+    margin: 10px;
+    //background-color: #D8000C;
+}
+
+.formContactHead p {
+    text-align: justify;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    font-size: 25px;
+
+}
+
+.conteneurForm {
+    display: inline-flex;
+}
+
+.coordonnees {
+    // background-color: red;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+}
+
+.coordonneesCentre {
+    margin-top: 140px;
+    // background-color: #BEBEBE;
+    height: 70px;
+}
+
+.form-style {
+    width: 550px;
+    padding: 20px 0px 10px 20px;
+    font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    // background-color: white;
+    height: 350px
+}
+
+.form-style td {
+    padding: 0;
+    display: block;
+    list-style: none;
+}
+
+.form-style label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-style .required {
+    color: red;
+    font-size: 10px;
+}
+
+.form-style input[type=submit],
+.form-style input[type=reset] {
+    background: #ffffff;
+    padding: 8px 15px 8px 15px;
+    border-radius: 4px;
+    margin-right: 20px;
+    border: none;
+    color: #000000;
+}
+
+.form-style input[type=submit]:hover,
+.form-style input[type=reset]:hover {
+    background: #4eb5f1;
+    box-shadow: none;
+    cursor: pointer;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.form-style .field-textarea {
+    height: 100px;
+}
+
+.form-style input[type=text],
+.form-style input[type=email],
+textarea {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    resize: vertical;
+    //-webkit-transition: all 0.30s ease-in-out;
+    // -moz-transition: all 0.30s ease-in-out;
+    // -ms-transition: all 0.30s ease-in-out;
+    // -o-transition: all 0.30s ease-in-out;
+    outline: none;
+}
+
+.form-style .long {
+    width: 100%;
+}
+
+.form-style input[type=text]:focus,
+.form-style input[type=email]:focus,
+.form-style textarea:focus {
+    -moz-box-shadow: 0 0 8px #88D5E9;
+    -webkit-box-shadow: 0 0 8px #88D5E9;
+    box-shadow: 0 0 8px #88D5E9;
+    border: 1px solid #88D5E9;
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+
+@media (min-width: 300px) and (max-width: 995px) {
+
+    .coordonnees {
+        // margin-top: 20px;
+        height: 60px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .coordonneesCentre {
+        padding: 0px;
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .form-style {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteneurForm {
+        display: block;
+    }
+}
