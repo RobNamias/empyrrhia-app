@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/empyrrhia-app/static/css/main.8f7bf29d.css",
+    "main.js": "/empyrrhia-app/static/js/main.31fcd7da.js",
+    "static/media/Photoroom.png": "/empyrrhia-app/static/media/Photoroom.df7ce5ba1387309d253e.png",
+    "static/media/main.jpg": "/empyrrhia-app/static/media/main.516fbcd135926107480c.jpg",
+    "static/media/BlackDahlia.ttf": "/empyrrhia-app/static/media/BlackDahlia.03f3bbef4c0d42fadcd9.ttf",
+    "static/media/empyrrhia typo flo.png": "/empyrrhia-app/static/media/empyrrhia typo flo.e5479c38ce40018606a7.png",
+    "static/media/teleboobies.jpg": "/empyrrhia-app/static/media/teleboobies.47ac0308b6a9869b62c3.jpg",
+    "static/media/JosefinSans-Medium.ttf": "/empyrrhia-app/static/media/JosefinSans-Medium.3a0ce90aeb02cf6a189b.ttf",
+    "static/media/logoinsta.png": "/empyrrhia-app/static/media/logoinsta.4f8468a190d8b22d573c.png",
+    "static/media/logobandcamp.png": "/empyrrhia-app/static/media/logobandcamp.4bfb3ab86cb02160e4a1.png",
+    "static/media/logoyoutube.png": "/empyrrhia-app/static/media/logoyoutube.0895910767f8bd2f334c.png",
+    "static/media/logofb.png": "/empyrrhia-app/static/media/logofb.61a094b92a202a0baeb6.png",
+    "index.html": "/empyrrhia-app/index.html",
+    "main.8f7bf29d.css.map": "/empyrrhia-app/static/css/main.8f7bf29d.css.map",
+    "main.31fcd7da.js.map": "/empyrrhia-app/static/js/main.31fcd7da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f7bf29d.css",
+    "static/js/main.31fcd7da.js"
+  ]
+}
