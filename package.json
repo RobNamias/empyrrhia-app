@@ -2,7 +2,7 @@
   "name": "empyrrhia-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RobNamias.github.io/empyrrhia-app",
+  "homepage": "https://robnamias.github.io/empyrrhia-app",
   "dependencies": {
     "cra-template": "1.2.0",
     "gh-pages": "^6.3.0",
