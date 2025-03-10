@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/empyrrhia-app/static/css/main.28a61033.css",
-    "main.js": "/empyrrhia-app/static/js/main.15b476f6.js",
+    "main.css": "/empyrrhia-app/static/css/main.7fc87d23.css",
+    "main.js": "/empyrrhia-app/static/js/main.f44ece60.js",
     "static/media/02 Infernal Descent.mp3": "/empyrrhia-app/static/media/02 Infernal Descent.fd287aca5601bdf8a96b.mp3",
     "static/media/01 Intro .mp3": "/empyrrhia-app/static/media/01 Intro .a5df346d163c4b3eefc8.mp3",
     "static/media/Photoroom.png": "/empyrrhia-app/static/media/Photoroom.df7ce5ba1387309d253e.png",
-    "static/media/main.jpg": "/empyrrhia-app/static/media/main.516fbcd135926107480c.jpg",
     "static/media/BlackDahlia.ttf": "/empyrrhia-app/static/media/BlackDahlia.03f3bbef4c0d42fadcd9.ttf",
     "static/media/empyrrhia typo flo.png": "/empyrrhia-app/static/media/empyrrhia typo flo.e5479c38ce40018606a7.png",
+    "static/media/Frodon.jpg": "/empyrrhia-app/static/media/Frodon.dce27c5907b96db6fde8.jpg",
+    "static/media/hou.jpg": "/empyrrhia-app/static/media/hou.0120e9d9fe912f92e3b4.jpg",
     "static/media/teleboobies.jpg": "/empyrrhia-app/static/media/teleboobies.47ac0308b6a9869b62c3.jpg",
     "static/media/JosefinSans-Medium.ttf": "/empyrrhia-app/static/media/JosefinSans-Medium.3a0ce90aeb02cf6a189b.ttf",
+    "static/media/pizza.jpg": "/empyrrhia-app/static/media/pizza.39dbc6187f5c15e953b2.jpg",
     "static/media/logoinsta.png": "/empyrrhia-app/static/media/logoinsta.4f8468a190d8b22d573c.png",
     "static/media/logobandcamp.png": "/empyrrhia-app/static/media/logobandcamp.4bfb3ab86cb02160e4a1.png",
     "static/media/logoyoutube.png": "/empyrrhia-app/static/media/logoyoutube.0895910767f8bd2f334c.png",
     "static/media/logofb.png": "/empyrrhia-app/static/media/logofb.61a094b92a202a0baeb6.png",
     "index.html": "/empyrrhia-app/index.html",
-    "main.28a61033.css.map": "/empyrrhia-app/static/css/main.28a61033.css.map",
-    "main.15b476f6.js.map": "/empyrrhia-app/static/js/main.15b476f6.js.map"
+    "main.7fc87d23.css.map": "/empyrrhia-app/static/css/main.7fc87d23.css.map",
+    "main.f44ece60.js.map": "/empyrrhia-app/static/js/main.f44ece60.js.map"
   },
   "entrypoints": [
-    "static/css/main.28a61033.css",
-    "static/js/main.15b476f6.js"
+    "static/css/main.7fc87d23.css",
+    "static/js/main.f44ece60.js"
   ]
 }
