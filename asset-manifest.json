@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/empyrrhia-app/static/css/main.b5111fa8.css",
-    "main.js": "/empyrrhia-app/static/js/main.3be35eeb.js",
+    "main.css": "/empyrrhia-app/static/css/main.e32505dc.css",
+    "main.js": "/empyrrhia-app/static/js/main.c221c27d.js",
     "static/media/02 Infernal Descent.mp3": "/empyrrhia-app/static/media/02 Infernal Descent.fd287aca5601bdf8a96b.mp3",
     "static/media/01 Intro .mp3": "/empyrrhia-app/static/media/01 Intro .a5df346d163c4b3eefc8.mp3",
     "static/media/Photoroom.png": "/empyrrhia-app/static/media/Photoroom.df7ce5ba1387309d253e.png",
@@ -15,13 +15,14 @@
     "static/media/logoinsta.png": "/empyrrhia-app/static/media/logoinsta.4f8468a190d8b22d573c.png",
     "static/media/logobandcamp.png": "/empyrrhia-app/static/media/logobandcamp.4bfb3ab86cb02160e4a1.png",
     "static/media/logoyoutube.png": "/empyrrhia-app/static/media/logoyoutube.0895910767f8bd2f334c.png",
+    "static/media/contact.png": "/empyrrhia-app/static/media/contact.e0d1d4268adf65cc4cf9.png",
     "static/media/logofb.png": "/empyrrhia-app/static/media/logofb.61a094b92a202a0baeb6.png",
     "index.html": "/empyrrhia-app/index.html",
-    "main.b5111fa8.css.map": "/empyrrhia-app/static/css/main.b5111fa8.css.map",
-    "main.3be35eeb.js.map": "/empyrrhia-app/static/js/main.3be35eeb.js.map"
+    "main.e32505dc.css.map": "/empyrrhia-app/static/css/main.e32505dc.css.map",
+    "main.c221c27d.js.map": "/empyrrhia-app/static/js/main.c221c27d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5111fa8.css",
-    "static/js/main.3be35eeb.js"
+    "static/css/main.e32505dc.css",
+    "static/js/main.c221c27d.js"
   ]
 }
