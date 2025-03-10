@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/empyrrhia-app/static/css/main.9c4b0d31.css",
+    "main.css": "/empyrrhia-app/static/css/main.0767482b.css",
     "main.js": "/empyrrhia-app/static/js/main.1f9a5efc.js",
     "static/media/02 Infernal Descent.mp3": "/empyrrhia-app/static/media/02 Infernal Descent.fd287aca5601bdf8a96b.mp3",
     "static/media/01 Intro .mp3": "/empyrrhia-app/static/media/01 Intro .a5df346d163c4b3eefc8.mp3",
@@ -15,11 +15,11 @@
     "static/media/logoyoutube.png": "/empyrrhia-app/static/media/logoyoutube.0895910767f8bd2f334c.png",
     "static/media/logofb.png": "/empyrrhia-app/static/media/logofb.61a094b92a202a0baeb6.png",
     "index.html": "/empyrrhia-app/index.html",
-    "main.9c4b0d31.css.map": "/empyrrhia-app/static/css/main.9c4b0d31.css.map",
+    "main.0767482b.css.map": "/empyrrhia-app/static/css/main.0767482b.css.map",
     "main.1f9a5efc.js.map": "/empyrrhia-app/static/js/main.1f9a5efc.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c4b0d31.css",
+    "static/css/main.0767482b.css",
     "static/js/main.1f9a5efc.js"
   ]
 }
