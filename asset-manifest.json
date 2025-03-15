@@ -1,8 +1,17 @@
 {
   "files": {
     "main.css": "/empyrrhia-app/static/css/main.4206c0ba.css",
-    "main.js": "/empyrrhia-app/static/js/main.ac1b1e11.js",
+    "main.js": "/empyrrhia-app/static/js/main.a78166e8.js",
+    "static/media/04 Compo 28 .mp3": "/empyrrhia-app/static/media/04 Compo 28 .303d336e159477f04b54.mp3",
     "static/media/02 Infernal Descent.mp3": "/empyrrhia-app/static/media/02 Infernal Descent.fd287aca5601bdf8a96b.mp3",
+    "static/media/03 Compo 30 .mp3": "/empyrrhia-app/static/media/03 Compo 30 .28e0e272da367f512942.mp3",
+    "static/media/07 Compo 11 .mp3": "/empyrrhia-app/static/media/07 Compo 11 .69653561a5f0a74b2948.mp3",
+    "static/media/06 Compo 10 .mp3": "/empyrrhia-app/static/media/06 Compo 10 .a246f7a0bf1588e3bafc.mp3",
+    "static/media/09 Compo 34 .mp3": "/empyrrhia-app/static/media/09 Compo 34 .9b3cc6741c5c710daab6.mp3",
+    "static/media/08 Compo 25 .mp3": "/empyrrhia-app/static/media/08 Compo 25 .d59cacf91ee052c94b97.mp3",
+    "static/media/05 Compo 9 .mp3": "/empyrrhia-app/static/media/05 Compo 9 .156ddce21ef14ce63789.mp3",
+    "static/media/10 Compo 32 .mp3": "/empyrrhia-app/static/media/10 Compo 32 .bccbfee00cfed710582e.mp3",
+    "static/media/11 La Compo 31 (final).mp3": "/empyrrhia-app/static/media/11 La Compo 31 (final).bf24b89d4beaf77a9314.mp3",
     "static/media/01 Intro .mp3": "/empyrrhia-app/static/media/01 Intro .a5df346d163c4b3eefc8.mp3",
     "static/media/Photoroom.png": "/empyrrhia-app/static/media/Photoroom.df7ce5ba1387309d253e.png",
     "static/media/BlackDahlia.ttf": "/empyrrhia-app/static/media/BlackDahlia.03f3bbef4c0d42fadcd9.ttf",
@@ -19,10 +28,10 @@
     "static/media/logofb.png": "/empyrrhia-app/static/media/logofb.61a094b92a202a0baeb6.png",
     "index.html": "/empyrrhia-app/index.html",
     "main.4206c0ba.css.map": "/empyrrhia-app/static/css/main.4206c0ba.css.map",
-    "main.ac1b1e11.js.map": "/empyrrhia-app/static/js/main.ac1b1e11.js.map"
+    "main.a78166e8.js.map": "/empyrrhia-app/static/js/main.a78166e8.js.map"
   },
   "entrypoints": [
     "static/css/main.4206c0ba.css",
-    "static/js/main.ac1b1e11.js"
+    "static/js/main.a78166e8.js"
   ]
 }
