@@ -1,0 +1,108 @@
+.next3show {
+    // background-color: rgb(34, 34, 34);
+    border-radius: 3px;
+
+    h1 {
+        padding-top: 20px;
+        text-align: left;
+        margin-left: 30px;
+
+        // text-decoration: underlin;
+        @media (min-width: 300px) and (max-width: 995px) {
+            width: 98%;
+            margin: auto;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        //background-color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    li {
+        border-radius: 5px;
+        margin: 5px 20px;
+        padding: 5px 5px 0 5px;
+        font-size: 20px;
+
+        @media (min-width: 300px) and (max-width: 995px) {
+            width: 98%;
+            margin: auto;
+        }
+
+    }
+
+    img {
+        height: 100px;
+        width: 75px;
+        border-style: none;
+        box-shadow: 0;
+
+        &#bobigny {
+
+            height: 280px;
+            width: 200px;
+            background-image: url('../../assets/img/pizza.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &#brockoly {
+
+            width: 50%;
+            height: 350px;
+            background-image: url('../../assets/img/hou.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &#sceneouverte {
+            height: 280px;
+            width: 200px;
+            background-image: url('../../assets/img/Frodon.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+    }
+
+    .textShow {
+        @include verticalCenter;
+        justify-content: left;
+        text-align: left;
+        height: fit-content;
+        width: 98%;
+        margin: auto;
+        font-size: 22px;
+        border-radius: 5px;
+        backdrop-filter: invert(10%);
+    }
+
+    .date {
+        color: white;
+        padding: 0 20px;
+    }
+
+    p {
+        padding: 10px 20px 10px 0;
+        justify-content: left;
+        text-align: left;
+    }
+
+    @media (min-width: 300px) and (max-width: 995px) {
+        .textShow {
+            width: 100%;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+
+
+}

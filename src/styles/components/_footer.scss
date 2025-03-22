@@ -1,23 +1,40 @@
 .footer {
     border-width: 10px black;
-    padding-bottom: 15px;
+    width: 100%;
+    margin: auto;
+    backdrop-filter: invert(10%);
+    vertical-align: middle;
+    @include verticalCenter;
+
+
+    // background: url(../../assets/img/main.jpg) center/cover;
     // background-color: white;
 }
 
 .reseauSoc {
+    display: inline-flex;
+    margin: auto;
     text-align: center;
+    // background: #FF0000;
 
     a {
-        display: inline-block;
+        // display: inline-flex;
         // background-color: white;
         border-radius: 30px;
         height: 40px;
         width: 40px;
-        margin: 20px 40px;
-        vertical-align: middle;
+        margin: 30px 40px;
         text-decoration: none;
         color: black;
         background-size: 40px;
+
+        &:hover {
+            background-color: white;
+            transition: background-color 1s ease-in-out;
+            -moz-transition: background-color 1s ease-in-out;
+            -webkit-transition: background-color 1s ease-in-out;
+            ;
+        }
     }
 
     @media (min-width: 300px) and (max-width: 995px) {
@@ -30,21 +47,50 @@
     #fb {
 
         background-image: url('../../assets/img/reseauSoc/logofb.png');
+
+        &:hover {
+            background-color: #3B5998;
+        }
+
         // background-color: #3B5998;
     }
 
     #youtube {
 
         background-image: url('../../assets/img/reseauSoc/logoyoutube.png');
+
+        &:hover {
+            background-color: #FF0000;
+        }
+
         // background-color: #FF0000;
     }
 
     #inst {
         background-image: url('../../assets/img/reseauSoc/logoinsta.png');
+
+        &:hover {
+            background-color: #f77737;
+        }
+
         // background-color: white;
     }
 
     #bandcamp {
         background-image: url('../../assets/img/reseauSoc/logobandcamp.png');
     }
+}
+
+a.versContact {
+    height: 40px;
+    @include verticalCenter;
+    width: 80px;
+    border-radius: 30px;
+    color: rgb(214, 214, 214);
+    font-size: 20px;
+    background: url(../../assets/img/reseauSoc/contact.png) center/cover;
+}
+
+.versContact:hover {
+    cursor: pointer;
 }

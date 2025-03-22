@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../../assets/fonts/JosefinSans-Medium.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+
 .formContact {
     margin: 10px;
     //background-color: #D8000C;
@@ -6,13 +13,11 @@
 .formContactHead p {
     text-align: justify;
     padding: 10px;
-}
 
-h1 {
-    text-align: center;
-    margin: 10px;
-    font-size: 25px;
-
+    &::first-letter {
+        margin-left: 20px;
+        font-size: large;
+    }
 }
 
 .conteneurForm {
@@ -24,20 +29,32 @@ h1 {
     width: 400px;
     height: 350px;
     text-align: center;
-}
 
-.coordonneesCentre {
-    margin-top: 140px;
-    // background-color: #BEBEBE;
-    height: 70px;
+
+
+    h1 {
+        width: 100%;
+        height: 20%;
+        font-size: 25px;
+        margin-top: 20%;
+    }
 }
 
 .form-style {
     width: 550px;
     padding: 20px 0px 10px 20px;
-    font: 14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: $font-1;
     // background-color: white;
     height: 350px
+}
+
+.form-style #submitButton {
+    text-align: center;
+    // background-color: #D8000C;
+
+    td {
+        margin: auto;
+    }
 }
 
 .form-style td {
@@ -60,17 +77,32 @@ h1 {
 
 .form-style input[type=submit],
 .form-style input[type=reset] {
-    background: #ffffff;
-    padding: 8px 15px 8px 15px;
-    border-radius: 4px;
-    margin-right: 20px;
-    border: none;
-    color: #000000;
+    font-family: $font-1;
+    font-size: 16px;
+    font-style: bold;
+    background-color: #ffffff;
+    // border: none;
+    color: rgb(0, 0, 0);
+    border: black;
+    border-width: 10px;
+    border-radius: 30px;
+    padding: 15px 32px;
+    // text-decoration: none;
+    margin: 4px 20px;
+    cursor: pointer;
+    // // background: #ffffff;
+    // padding: 8px 15px 8px 15px;
+
+    // border: white 3px;
+    // border-radius: 5px;
+    // margin: 0 7%;
+    // // border: none;
+    // color: #000000;
 }
 
 .form-style input[type=submit]:hover,
 .form-style input[type=reset]:hover {
-    background: #4eb5f1;
+    // background: #4eb5f1;
     box-shadow: none;
     cursor: pointer;
     -moz-box-shadow: none;
@@ -121,23 +153,22 @@ textarea {
 
     .coordonnees {
         // margin-top: 20px;
-        height: 60px;
+        height: fit-content;
         margin: auto;
         width: 100%;
-    }
 
-    .coordonneesCentre {
-        padding: 0px;
-        margin-top: 0;
-    }
 
-    h1 {
-        font-size: 20px;
+
+        h1 {
+            font-size: 20px;
+            height: fit-content;
+            margin: 10% 0;
+        }
     }
 
     .form-style {
         width: 100%;
-        margin: 0;
+        margin: 10% 0;
         padding: 0;
     }
 

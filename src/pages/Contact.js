@@ -1,6 +1,5 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
 
 
 const Contact = () => {
@@ -65,12 +64,10 @@ const Contact = () => {
                 </div>
                 <div className="conteneurForm">
                     <div className="coordonnees">
-                        <div className="coordonneesCentre">
-                            <h1>Empyrrhia</h1>
-                            <h1>intense.prod@Mescouilles.com</h1>
-                        </div>
+                        <h1>Empyrrhia</h1>
+                        <h1>intense.prod@Mescouilles.com</h1>
                     </div>
-
+                    <hr />
 
                     {/* <form name="myForm" action="mailto:cedric.rodien@hotmail.fr?subject=TestEmpyrhia" enctype="multipart/form-data" onsubmit="return validateForm()" method="post"> */}
                     <form method="POST" action="mailto:cedric.rodien@hotmail.fr?subject=TestEmpyrhia" enctype="multipart/form-data">
@@ -108,8 +105,7 @@ const Contact = () => {
                                     <span class="error" id="errormsg"></span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td></td>
+                            <tr id="submitButton">
                                 <td>
                                     <input type="submit" value="Envoyer" />
                                     <input type="reset" value="Réinitialiser" />
@@ -119,7 +115,6 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 };

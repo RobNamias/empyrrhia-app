@@ -1,11 +1,11 @@
 @import "./settings";
 @import "./components/navigation";
-@import "./components/logo";
 @import "./components/lecteur";
 @import "./components/footer";
-@import "./pages/about";
 @import "./pages/home";
 @import "./pages/contact";
+@import "./pages/dates";
+@import "./pages/medias";
 
 
 
@@ -16,13 +16,16 @@
 
 .conteneur {
     background-color: rgba($color-4, 0.3);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
     margin: auto;
-    width: 996px;
+    // width: 996px;
+
+    width: 1280px;
 }
 
 @media (min-width: 300px) and (max-width: 995px) {
     .conteneur {
-        width: auto;
+        width: 98%;
+        backdrop-filter: blur(1px);
     }
 }

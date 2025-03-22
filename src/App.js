@@ -6,12 +6,13 @@ import Medias from './pages/Medias';
 import Dates from './pages/Dates';
 import Contact from './pages/Contact';
 import Lecteur from './components/Lecteur';
+import Footer from './components/Footer'
 //import Logo from './components/Logo';
 
 const App = () => {
   return (
     <>
-      <div className='conteneurlecteur' id="conteneurlecteurid">
+      <div className='grandconteneur' >
         <Lecteur />
       </div>
       <div className='conteneur'>
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="*" element={<Home />} />
           </Routes>
         </BrowserRouter>
+        <Footer />
       </div>
     </>
   );

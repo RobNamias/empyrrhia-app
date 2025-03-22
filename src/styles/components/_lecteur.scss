@@ -5,47 +5,94 @@ $rhap_bar-color: #000000 !default;
 $rhap_time-color: #000000 !default;
 $rhap_font-family: inherit !default;
 
-.conteneurlecteur {
 
-    backdrop-filter: invert(30%); // background-color: rgba(71, 71, 71, 0.171);
+.grandconteneur {
+
+    // background-color: white;
+    // width: 250px;
     position: fixed;
     right: 0;
+    // float: right;
+    // margin-right: 0px;
     margin-top: 280px;
-    margin-right: 2px;
-    width: 250px;
+    height: fit-content;
+    // display: block;
+    z-index: 99;
+    opacity: inherit;
+}
+
+
+//le bouton pour cacher ou montrer le lecteur
+#boutoncacher {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    right: 0;
+    margin-top: 200px;
+    margin: 0;
+    opacity: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+#boutoncacher:hover {
+    cursor: pointer;
+}
+
+#imagecacher {
+    height: 28px;
+    width: 28px;
+    position: center;
+    background-image: url(../../assets/img/reseauSoc/logolecteur.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: none;
+    margin: auto;
+    box-shadow: none;
+    outline: none;
+    border: inherit;
+    text-shadow: none;
+    // background-color: white;
+
+}
+
+.conteneurlecteur {
+
+    backdrop-filter: invert(30%);
+    width: 0px;
     border-radius: 5px;
-    vertical-align: middle;
-    z-index: 10;
-    opacity: 20%;
-    // transition: opacity 5s ease-in-out;
-    // -moz-transition: opacity 5s ease-in-out;
-    // -webkit-transition: opacity 5s ease-in-out;
-    transition: all 7s ease-in-out;
-    -moz-transition: all 7s ease-in-out;
-    -webkit-transition: all 7s ease-in-out;
-    ;
+    // opacity: 50%;
+    transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
 
     &:hover {
         backdrop-filter: blur(2px) invert(30%);
         opacity: 100%;
-        transition: all 2s ease-in-out;
-        -moz-transition: all 2s ease-in-out;
-        -webkit-transition: all 2s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
     }
 }
 
-@media (min-width: 750px) and (max-width: 995px) {
-    .conteneurlecteur {
+@media (min-width: 300px) and (max-width: 995px) {
+    .grandconteneur {
         margin-top: 125px;
+        opacity: 100%;
+        // width: 100%;
+    }
+
+    .conteneurlecteur {
+        background-color: rgb(88, 88, 88);
     }
 }
 
 @media (min-width: 300px) and (max-width: 750px) {
-    .conteneurlecteur {
-        margin-top: 125px;
-        width: 100%;
-        opacity: 100%;
-    }
+    // .conteneurlecteur {
+    //     // width: 100%;
+    // }
 
     .conteneurHeader {
         width: 100%;
@@ -70,61 +117,42 @@ $rhap_font-family: inherit !default;
 }
 
 .conteneurHeader {
+    // background-color: white;
     // backdrop-filter: blur(5px);
-    display: inline-flex;
-    width: 250px;
+    // width: 100%;
+    position: relative;
     border-radius: 0;
     margin: 0;
     height: 30px;
-    opacity: 100%;
+    // opacity: 100%;
 }
 
 .HeaderLecteur {
-    width: 250px;
-    margin: 0;
+    // background-color: white;
+    margin-right: 45px;
+    margin-left: 5px;
 }
 
 
 
-#boutoncacher {
-    width: 50px;
-    height: 30px;
-    //background-color: $rhap_background-color;
-    border: 0;
-    //border-radius: 15px;
-    // float: center;
-    margin: 0;
-}
 
-#boutoncacher:hover {
-    cursor: pointer;
-}
-
-#boutoncacher img {
-    width: 23px;
-    height: 23px;
-    position: center, center;
-    padding: 0;
-    margin-top: 2.5px;
-}
 
 //Scrollbar
 .scroll-left {
-    margin-left: 5px;
     overflow: hidden;
-    // background-color: white;
     color: white;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 100;
-    padding: 0 5px;
-    width: 185px
+    width: 100%;
 }
 
 .scroll-left p {
+    // background-color: white;
+
     height: 100%;
-    font-size: 22px;
+    width: 100%;
+    font-size: 20px;
     line-height: 30px;
     white-space: nowrap;
     overflow: visible;
@@ -221,7 +249,7 @@ $rhap_font-family: inherit !default;
     color: $rhap_time-color;
     font-size: 12px;
     user-select: none;
-    width: 38px;
+    width: 36px;
     margin-top: 4px;
     -webkit-user-select: none;
 }
@@ -348,6 +376,7 @@ $rhap_font-family: inherit !default;
     margin-right: 6px;
 }
 
+
 //Playlist
 
 .playlistLecteur {
@@ -369,7 +398,10 @@ $rhap_font-family: inherit !default;
     background-color: inherit;
     text-align: left;
     margin: 0;
-    width: 100%;
+    width: 98%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 
     &:hover {
         cursor: pointer;

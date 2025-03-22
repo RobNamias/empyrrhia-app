@@ -20,7 +20,7 @@ $white: rgb(243, 243, 243);
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
   text-shadow: 2px 2px 2px 2px white;
   height: 100%;
 
-  //@include verticalCenter;
+  @include verticalCenter;
 }
 
 li {
